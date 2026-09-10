@@ -3,178 +3,565 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mail Agent - Privacy Policy</title>
+
+    <title>Mail Agent — Privacy Policy</title>
+
+    <meta name="description"
+          content="Privacy Policy for Mail Agent, an AI-powered Gmail assistant.">
 
     <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
         body {
-            font-family: Arial, sans-serif;
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Helvetica,
+                Arial,
+                sans-serif;
+
+            background: #f5f7fb;
+            color: #172033;
             line-height: 1.7;
+        }
+
+        /* Header */
+
+        header {
+            background: #071b49;
+            color: white;
+            padding: 22px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+
+        .nav {
+            max-width: 1050px;
+            margin: auto;
+            padding: 0 24px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: -0.3px;
+        }
+
+        .brand-icon {
+            width: 38px;
+            height: 38px;
+            border-radius: 10px;
+
+            background: linear-gradient(
+                135deg,
+                #2563eb,
+                #38bdf8
+            );
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-size: 20px;
+        }
+
+        .nav-label {
+            font-size: 14px;
+            color: #b8c7e6;
+        }
+
+        /* Hero */
+
+        .hero {
+            background: #071b49;
+            color: white;
+            padding: 70px 24px 90px;
+        }
+
+        .hero-content {
             max-width: 850px;
-            margin: 0 auto;
-            padding: 40px 20px;
-            color: #222;
-            background: #ffffff;
+            margin: auto;
+        }
+
+        .badge {
+            display: inline-block;
+
+            background: rgba(56,189,248,0.12);
+            border: 1px solid rgba(56,189,248,0.25);
+
+            color: #7dd3fc;
+
+            padding: 6px 12px;
+            border-radius: 999px;
+
+            font-size: 13px;
+            font-weight: 600;
+
+            margin-bottom: 20px;
         }
 
         h1 {
-            color: #1a73e8;
+            font-size: clamp(38px, 6vw, 58px);
+            line-height: 1.1;
+            letter-spacing: -1.8px;
+            margin-bottom: 18px;
         }
 
-        h2 {
-            margin-top: 30px;
-            color: #333;
+        .hero p {
+            max-width: 700px;
+            color: #c8d5ed;
+            font-size: 17px;
         }
 
         .updated {
-            color: #666;
+            margin-top: 25px;
+            font-size: 14px;
+            color: #91a4c8;
+        }
+
+        /* Main */
+
+        main {
+            max-width: 900px;
+            margin: -45px auto 70px;
+            padding: 0 20px;
+            position: relative;
+        }
+
+        .policy {
+            background: white;
+            border-radius: 18px;
+            box-shadow: 0 15px 45px rgba(15, 23, 42, 0.08);
+            padding: 50px;
+        }
+
+        section {
+            padding: 0 0 38px;
+            margin-bottom: 38px;
+            border-bottom: 1px solid #e8ecf3;
+        }
+
+        section:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        h2 {
+            font-size: 22px;
+            letter-spacing: -0.3px;
+            margin-bottom: 15px;
+            color: #111827;
+        }
+
+        p {
+            margin-bottom: 14px;
+            color: #4b5563;
+        }
+
+        ul {
+            margin: 15px 0 15px 22px;
+            color: #4b5563;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        strong {
+            color: #1f2937;
+        }
+
+        .highlight {
+            background: #f0f7ff;
+            border-left: 4px solid #2563eb;
+
+            padding: 18px 20px;
+            border-radius: 8px;
+
+            margin: 20px 0;
+        }
+
+        .highlight p {
+            margin: 0;
+        }
+
+        /* Contact */
+
+        .contact {
+            background: #f8fafc;
+            border-radius: 12px;
+            padding: 22px;
+            margin-top: 15px;
+        }
+
+        .contact p {
+            margin-bottom: 6px;
+        }
+
+        /* Footer */
+
+        footer {
+            border-top: 1px solid #e5e7eb;
+            padding: 30px 20px;
+            text-align: center;
+            color: #6b7280;
+            font-size: 13px;
+        }
+
+        footer strong {
+            color: #374151;
+        }
+
+        /* Mobile */
+
+        @media (max-width: 650px) {
+
+            .nav {
+                padding: 0 18px;
+            }
+
+            .nav-label {
+                display: none;
+            }
+
+            .hero {
+                padding: 55px 20px 75px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            main {
+                padding: 0 14px;
+                margin-top: -35px;
+            }
+
+            .policy {
+                padding: 30px 24px;
+                border-radius: 14px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
         }
     </style>
 </head>
 
 <body>
 
-    <h1>Mail Agent Privacy Policy</h1>
+<header>
+    <div class="nav">
 
-    <p class="updated">
-        Last updated: September 10, 2026
-    </p>
+        <div class="brand">
+            <div class="brand-icon">✉</div>
+            <span>Mail Agent</span>
+        </div>
 
-    <p>
-        Mail Agent is an application that helps users organize and summarize
-        their Gmail messages using automated processing and artificial
-        intelligence.
-    </p>
+        <div class="nav-label">
+            Privacy & Security
+        </div>
 
-    <h2>1. Information We Access</h2>
+    </div>
+</header>
 
-    <p>
-        When you authorize Mail Agent through Google OAuth, the application
-        may access information from your Gmail account, including email
-        messages, subjects, sender and recipient information, timestamps,
-        message identifiers, and related metadata.
-    </p>
 
-    <h2>2. How We Use Gmail Data</h2>
+<div class="hero">
 
-    <p>
-        Gmail data accessed by Mail Agent is used only to provide the
-        application's functionality. This includes retrieving authorized
-        emails, processing email information, organizing messages, and
-        generating email summaries.
-    </p>
+    <div class="hero-content">
 
-    <p>
-        Mail Agent does not sell Gmail data or use Gmail data for advertising.
-    </p>
+        <div class="badge">
+            Privacy Policy
+        </div>
 
-    <h2>3. AI Processing</h2>
+        <h1>Your privacy matters.</h1>
 
-    <p>
-        Mail Agent may use Google's Gemini API to process email content and
-        generate AI-powered summaries.
-    </p>
+        <p>
+            This Privacy Policy explains how Mail Agent accesses,
+            processes, and protects information when you use the
+            application with your Gmail account.
+        </p>
 
-    <p>
-        Email information may be transmitted to the AI service when necessary
-        to provide the requested functionality.
-    </p>
+        <div class="updated">
+            Last updated: September 10, 2026
+        </div>
 
-    <h2>4. Data Storage</h2>
+    </div>
 
-    <p>
-        Mail Agent may store information required to provide its functionality,
-        such as processed email information, summaries, message identifiers,
-        and application data.
-    </p>
+</div>
 
-    <p>
-        OAuth credentials and authentication tokens are used only to maintain
-        the authorized connection to the user's Google account and are not
-        sold or shared for advertising purposes.
-    </p>
 
-    <h2>5. Data Sharing</h2>
+<main>
 
-    <p>
-        Mail Agent does not sell, rent, or trade users' personal information.
-    </p>
+    <div class="policy">
 
-    <p>
-        Information may be transmitted to services required for the
-        application's functionality, including:
-    </p>
+        <section>
 
-    <ul>
-        <li>Google Gmail API — to access authorized Gmail data.</li>
-        <li>Google Gemini API — to process email content and generate summaries.</li>
-    </ul>
+            <h2>1. Information We Access</h2>
 
-    <h2>6. Data Security</h2>
+            <p>
+                When you authorize Mail Agent through Google OAuth,
+                the application may access information from your Gmail
+                account necessary to provide its functionality.
+            </p>
 
-    <p>
-        Reasonable technical measures are used to protect information
-        processed by Mail Agent. However, no method of electronic transmission
-        or storage can be guaranteed to be completely secure.
-    </p>
+            <p>This may include:</p>
 
-    <h2>7. Data Retention and Deletion</h2>
+            <ul>
+                <li>Email messages and their contents</li>
+                <li>Email subjects</li>
+                <li>Sender and recipient information</li>
+                <li>Email timestamps</li>
+                <li>Gmail message identifiers and related metadata</li>
+            </ul>
 
-    <p>
-        Mail Agent retains application data only as long as reasonably
-        necessary to provide its functionality or for legitimate technical
-        purposes.
-    </p>
+        </section>
 
-    <p>
-        Users may revoke Mail Agent's access to their Google account at any
-        time through their Google Account settings.
-    </p>
 
-    <p>
-        Users may request deletion of application data by contacting the
-        developer using the contact information below.
-    </p>
+        <section>
 
-    <h2>8. Google API Services User Data Policy</h2>
+            <h2>2. How We Use Gmail Data</h2>
 
-    <p>
-        Mail Agent's use of information received from Google APIs complies with
-        the Google API Services User Data Policy, including its Limited Use
-        requirements.
-    </p>
+            <p>
+                Gmail data accessed by Mail Agent is used solely to
+                provide the application's functionality.
+            </p>
 
-    <p>
-        Mail Agent uses Google user data only to provide the functionality
-        requested by the user and does not sell Google user data.
-    </p>
+            <p>This includes:</p>
 
-    <h2>9. Children's Privacy</h2>
+            <ul>
+                <li>Retrieving emails authorized by the user</li>
+                <li>Processing and organizing email information</li>
+                <li>Generating AI-powered email summaries</li>
+                <li>Presenting processed information to the user</li>
+            </ul>
 
-    <p>
-        Mail Agent is not intended for children under the age of 13, and the
-        application does not knowingly collect personal information from
-        children under 13.
-    </p>
+            <div class="highlight">
 
-    <h2>10. Changes to This Privacy Policy</h2>
+                <p>
+                    <strong>
+                        Mail Agent does not sell Gmail data or use
+                        Gmail data for advertising.
+                    </strong>
+                </p>
 
-    <p>
-        This Privacy Policy may be updated from time to time to reflect
-        changes to the application or its data practices. Any changes will be
-        posted on this page with an updated "Last updated" date.
-    </p>
+            </div>
 
-    <h2>11. Contact</h2>
+        </section>
 
-    <p>
-        If you have questions about this Privacy Policy or would like to
-        request deletion of your application data, please contact:
-    </p>
 
-    <p>
-        <strong>Developer:</strong> Yash Rautela<br>
-        <strong>Email:</strong> yashsingh.rautela2004@gmail.com
-    </p>
+        <section>
+
+            <h2>3. AI Processing</h2>
+
+            <p>
+                Mail Agent may use Google's Gemini API to process
+                email content and generate AI-powered summaries.
+            </p>
+
+            <p>
+                Email information may be transmitted to the AI
+                service when necessary to perform the requested
+                functionality.
+            </p>
+
+        </section>
+
+
+        <section>
+
+            <h2>4. Data Storage</h2>
+
+            <p>
+                Mail Agent may store information required to provide
+                its functionality, such as processed email
+                information, summaries, message identifiers, and
+                application records.
+            </p>
+
+            <p>
+                OAuth credentials and authentication tokens are used
+                to maintain the authorized connection to the user's
+                Google account.
+            </p>
+
+        </section>
+
+
+        <section>
+
+            <h2>5. Data Sharing</h2>
+
+            <p>
+                Mail Agent does not sell, rent, or trade users'
+                personal information.
+            </p>
+
+            <p>
+                Information may be transmitted to third-party
+                services when required to provide the application's
+                functionality, including:
+            </p>
+
+            <ul>
+                <li>
+                    <strong>Google Gmail API</strong> —
+                    to access Gmail data authorized by the user.
+                </li>
+
+                <li>
+                    <strong>Google Gemini API</strong> —
+                    to process email content and generate summaries.
+                </li>
+            </ul>
+
+        </section>
+
+
+        <section>
+
+            <h2>6. Data Security</h2>
+
+            <p>
+                Reasonable technical measures are used to protect
+                information processed by Mail Agent.
+            </p>
+
+            <p>
+                However, no method of electronic transmission or
+                storage can be guaranteed to be completely secure.
+            </p>
+
+        </section>
+
+
+        <section>
+
+            <h2>7. Data Retention and Deletion</h2>
+
+            <p>
+                Mail Agent retains application data only for as long
+                as reasonably necessary to provide its functionality
+                or for legitimate technical purposes.
+            </p>
+
+            <p>
+                Users may revoke Mail Agent's access to their Google
+                account at any time through their Google Account
+                settings.
+            </p>
+
+            <p>
+                Users may request deletion of application data by
+                contacting the developer using the contact
+                information below.
+            </p>
+
+        </section>
+
+
+        <section>
+
+            <h2>8. Google API Services User Data Policy</h2>
+
+            <p>
+                Mail Agent's use of information received from Google
+                APIs complies with the Google API Services User Data
+                Policy, including its Limited Use requirements.
+            </p>
+
+            <p>
+                Mail Agent uses Google user data only to provide the
+                functionality requested by the user and does not
+                sell Google user data.
+            </p>
+
+        </section>
+
+
+        <section>
+
+            <h2>9. Children's Privacy</h2>
+
+            <p>
+                Mail Agent is not intended for children under the
+                age of 13, and the application does not knowingly
+                collect personal information from children under 13.
+            </p>
+
+        </section>
+
+
+        <section>
+
+            <h2>10. Changes to This Policy</h2>
+
+            <p>
+                This Privacy Policy may be updated from time to time
+                to reflect changes to the application or its data
+                practices.
+            </p>
+
+            <p>
+                Any changes will be posted on this page with an
+                updated "Last updated" date.
+            </p>
+
+        </section>
+
+
+        <section>
+
+            <h2>11. Contact</h2>
+
+            <p>
+                If you have questions about this Privacy Policy or
+                would like to request deletion of your application
+                data, please contact the developer.
+            </p>
+
+            <div class="contact">
+
+                <p>
+                    <strong>Developer:</strong>
+                    Yash Rautela
+                </p>
+
+                <p>
+                    <strong>Email:</strong>
+                    yashsingh.rautela2004@gmail.com
+                </p>
+
+            </div>
+
+        </section>
+
+    </div>
+
+</main>
+
+
+<footer>
+
+    <strong>Mail Agent</strong>
+    <br>
+    Privacy Policy · © 2026
+
+</footer>
 
 </body>
 </html>
